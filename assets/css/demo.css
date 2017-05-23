@@ -172,6 +172,10 @@
     margin-top: 0;
 }
 
+.section{
+    padding: 0 !IMPORTANT;
+}
+
 
 .parallax .parallax-image{
     width: 100%;
@@ -192,6 +196,25 @@
        height: 100%;
        width: auto;
    }
+    .video-container{
+        display: none;
+    }
+    .header-text{
+        background: url('../img/capaVideo/discussing_features.jpg') 50%;
+    }
+    .responsive-cover{
+        background: rgba(42, 107, 79, 0.69);
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    z-index: 0 !IMPORTANT;
+    }
+    .header-text{
+            height: 90vh;
+    }
+    .hide-mobile{
+    display: none;
+}
 }
 
 .separator{
@@ -482,6 +505,7 @@
     color: #2a6b4f;
     padding: 50px;
     margin: 0 !IMPORTANT;
+    font-size: 1.6em;
 }
 
 .bg-ice{
@@ -549,6 +573,12 @@ h3.sub-sw{
     width: 100%;
     bottom: 0;
     position: absolute;
+     height: 100%;
+ 
+    background-position: center;
+    object-fit: none;
+    object-position: 68% 63%;
+    top: 0;
 }
 .video-container .filter {
     z-index: 100;
@@ -570,7 +600,7 @@ h3.sub-sw{
     width: 100%;
     height: 90vh;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 }
 
 .bg-white{
@@ -607,9 +637,7 @@ h3.sub-sw{
     text-align: center !IMPORTANT;
     margin: 0 auto;
 }
-.section{
-    padding: 70px 0 !IMPORTANT;
-}
+
 
 .inverse{
     background: #2a6b4f;
@@ -624,4 +652,32 @@ p{
 
 .card-fixed{
         min-height: 360px;
+}
+@keyframes animatedBackground {
+	0% { background-position: 0% 0; }
+	50% { background-position: 100% 0; }
+	100% { background-position: 0% 0; }
+}
+
+#animate-area	{ 
+	width: 100%; 
+	height: 500px; 
+	background-image: url(../img/brands.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+}
+.footer{
+        padding: 15px 0;
+    background: #3a3a3a;
+    color: #fff;
+}
+
+.pd-vt{
+    padding: 15px 0;
+}
+.navbar-header a, a:hover, a:focus {
+    color: #ffffff;
+    text-decoration: none;
 }
