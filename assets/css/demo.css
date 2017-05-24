@@ -96,7 +96,7 @@
     margin: 0 auto 40px;
 }
 .txt-white{
-    color: #FFFFFF;
+    color: #FFFFFF !IMPORTANT;
 }
 .txt-gray{
     color: #ddd !important;
@@ -680,4 +680,15 @@ p{
 .navbar-header a, a:hover, a:focus {
     color: #ffffff;
     text-decoration: none;
+}
+
+.bg-red{
+    background: red;
+}
+.patrocinador{
+    margin: 15px;
+    padding: 15px;
+}
+.patrocinador img{
+    width: 300px;
 }
