@@ -692,3 +692,7 @@ p{
 .patrocinador img{
     width: 300px;
 }
+h3 {
+    font-stretch: 45pt;
+    font-weight: 500;
+}
